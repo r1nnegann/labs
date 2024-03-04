@@ -1,4 +1,4 @@
 import re
 
-string = re.findall(r'[a-zA-Zа-яА-Я]+_[a-zA-Zа-яА-Я]+', input())
+string = re.findall(r'[a-zа-я]+_[a-zа-я]+', input())
 print(*string)
