@@ -1,1 +1,1 @@
-b, a=int(input('Длина списка: ')), int(input("На сколько умножить: ")); print(*map(lambda x: x*a, [i for i in range(1, b+1)]))
+a, b=int(input('Длина списка: ')), int(input("На сколько умножить: ")); print(*map(lambda x: x*b, [i for i in range(1, a+1)]))
