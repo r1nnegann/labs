@@ -2,7 +2,16 @@ import pygame
 
 
 def rect(screen):
-    pygame.draw.rect(screen, colors[current_color], (x, y, *(x2 - x, y2 - y)), width=3)
+    x_local, y_local = x, y
+    width, height = x2-x, y2-y
+    if x2 < x:
+        x_local = x2
+        width = x - x2
+    if y2 < y:
+        y_local = y2
+        height = y - y2
+
+    pygame.draw.rect(screen, colors[current_color], (x_local, y_local, width, height), width=3)
 
 def circle(screen):
     pygame.draw.circle(screen, colors[current_color], (x,y), radius=((x2-x)**2+(y2-y)**2)**0.5, width=3)
