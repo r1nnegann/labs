@@ -103,7 +103,7 @@ while program:
                     current_color = 'red'
                 elif x < 440:
                     current_color = 'green'
-                elif x < 490:
+                elif x < 500:
                     current_color = 'blue'
 
             x2, y2 = x, y
